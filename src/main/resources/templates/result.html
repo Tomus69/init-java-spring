@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <link href="webjars/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/table.css" rel="stylesheet">
+  <script src="webjars/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1 class="title">Users</h1>
+    <div class="container">
+        <table class="table table-dark table-striped table-bordered text-center">
+            <thead>
+                <tr>
+                    <th scope="col">UserName</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="list :${userList}">
+                    <td th:text="${list}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/index">Submit another user</a>
+    </div>
+</body>
+</html>

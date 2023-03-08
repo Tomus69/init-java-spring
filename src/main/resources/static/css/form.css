@@ -1,0 +1,9 @@
+.title {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+}
